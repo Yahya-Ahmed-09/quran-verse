@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    height: 100vh;
+    background-color: #f3ede0;
+    padding: 40px;
+}
+.sidebar{
+    width: 25%;
+}
+.searchbar{
+    background-color: #f3ede0;
+    border: solid 1px #CFC4AB;
+}
+.searchbar input:focus{
+    outline: none;
+}
+.search-input{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+.surah-card{
+    padding: 15px;cursor: pointer;
+}
+.surah-card:hover{
+    background-color: #f3ede0;
+
+}
+.surah-card:hover .number{
+    background-color: #5b574c;
+    color: white;
+    
+}
+.number{
+    background-color: #f3ede0;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arabicName, .name, .English-meaning{
+    color: #5b574c;
+}
+.category-section{
+    height: 550px;
+    overflow-y:auto ;
+}
+.category-section::-webkit-scrollbar {
+    width: 5px; /* Adjust the width as desired */
+    background-color: #F5F5F5;
+  }
+  
+  /* Track */
+  .category-section::-webkit-scrollbar-track {
+    background: #F5F5F5;
+  }
+  
+  /* Handle */
+  .category-section::-webkit-scrollbar-thumb {
+    background: #5b574c; /* Change the color as desired */
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  .category-section::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change the hover color as desired */
+  }
+  .surah{
+    width: 75%;
+  }
+
+  .makkah{
+    width: 180px;
+  }
+  .name{
+    color: #5b574c;
+  }
+  .revealed{
+    opacity: 0.5;
+  }
+  .circle-wrapper {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 5px;
+  }
+  
+  .symbol {
+    font-size: 18px;
+  }
+  .verses{
+    padding: 30px;
+  }
+  .verse-words{
+    font-family: "Lateef", serif;
+    font-size: 30px;
+  }
+  .translation > span:first-child{
+    color: #5b574c;
+    opacity: 0.5;
+    font-size: 14px;
+  }
+  .translation > span:last-child{
+    font-size: 18px;
+    color: #5b574c;
+  }
+
+  .surah-content{
+    height: 450px;
+    overflow-y:auto ;
+}
+.surah-content::-webkit-scrollbar {
+    width: 5px; 
+    background-color: #F5F5F5;
+  }
+  
+
+  .surah-content::-webkit-scrollbar-track {
+    background: #F5F5F5;
+  }
+  
+
+  .surah-content::-webkit-scrollbar-thumb {
+    background: #5b574c; 
+    border-radius: 4px;
+  }
+  
+
+  .surah-content::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/* Hamburger Menu */
+
+@media only screen and (max-width: 768px){
+    .container{
+        padding: 0;
+    }
+    .sidebar{
+        width: 80%;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+} 
