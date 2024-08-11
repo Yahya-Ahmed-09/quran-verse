@@ -3,6 +3,7 @@ import './App.css';
 import SurahSidebar from './components/SurahSidebar';
 import Surah from './components/Surah';
 
+
 function App() {
   const [ayats, setAyats] = useState([]);
   const [name, setName] = useState({})
@@ -15,7 +16,6 @@ function App() {
     setAyats(result.arabic1);
     setName(result);
     setTranslation(result.english);
-    console.log(result.english)
   };
 
   useEffect(() => {
@@ -25,10 +25,12 @@ function App() {
   return (
     <>
       <div>
-          <div className="container w-full flex  gap-8">
-            <SurahSidebar getSurah={getSurah} name={name}/>
-            <Surah name={name} ayats={ayats} translation={translation}/>
-          </div>
+        <div className="container w-full flex  gap-8">
+       
+              <SurahSidebar getSurah={getSurah} headerName={name} ayats={ayats} translation={translation}/>
+              <Surah name={name} ayats={ayats} translation={translation} />
+
+        </div>
       </div>
     </>
   );
